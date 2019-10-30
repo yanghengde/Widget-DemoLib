@@ -37,6 +37,11 @@ namespace Siemens.Mom.Presales.Training.MasterData.DemoLib.MSModel.Commands
                 }
                 else
                 {
+                    var existentity = platform.Query<ITeam>().FirstOrDefault(x => x.Name == command.Team.Name);
+                    if(existentity != null)
+                    {
+                        return new UpdateTeam.Response { Error = new ExecutionError(-1010, string.Format("[{0}]已经有其它记录，不允许更新", command.Team.Name)) };
+                    }
                     entity.Name = command.Team.Name;
                     entity.Description = command.Team.Description;
                     entity.Number = command.Team.Number;

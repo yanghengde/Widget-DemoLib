@@ -13,7 +13,7 @@
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <FunctionalBlockType>Library</FunctionalBlockType>
-    <FunctionalBlockVersion>01.00.00</FunctionalBlockVersion>
+    <FunctionalBlockVersion>01.01.00</FunctionalBlockVersion>
     <FunctionalBlockName>DemoLib</FunctionalBlockName>
     <FunctionalBlockPrefix>Siemens.Mom.Presales.Training</FunctionalBlockPrefix>
     <SitPlatformVersion>3.0</SitPlatformVersion>

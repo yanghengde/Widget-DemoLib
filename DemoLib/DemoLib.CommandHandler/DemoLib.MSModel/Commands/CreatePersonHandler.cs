@@ -38,10 +38,7 @@ namespace Siemens.Mom.Presales.Training.MasterData.DemoLib.MSModel.Commands
                 entity.Age = command.Age;
                 entity.Sex = command.Sex;
 
-                PropertyValuesSpecification<IPerson> pv = new PropertyValuesSpecification<IPerson>();
-                pv.Add("FirstName", command.FirstName.Trim());
-                pv.Add("LastName", command.LastName.Trim());
-                var existentity = platform.GetEntity<IPerson>(pv);
+                var existentity = platform.Query<IPerson>().FirstOrDefault(x=>x.FirstName == command.FirstName && x.LastName == command.LastName);
                 if (existentity == null)
                 {
                     platform.Submit(entity);
