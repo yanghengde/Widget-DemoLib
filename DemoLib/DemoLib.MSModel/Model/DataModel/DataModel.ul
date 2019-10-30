@@ -1,0 +1,44 @@
+VERSION '01.12'
+
+[Securable]
+[@Guid(5eb11671-25c8-42c7-8100-0ab148f45547)]
+[@GuidId(99aba0f9-b496-4f8b-b3de-0ddd1efb9e13)]
+ENTITY Team
+WITH
+    [Length = 255]
+    [@Guid(cb7ba19a-913a-4214-b707-4d0baab6c269)]
+    Name AS string
+    [Length = 255]
+    [@Guid(1746c31c-7bef-4637-bc1d-7d1629eb347f)]
+    Description AS string
+    [@Guid(ab807591-2ac2-427c-8526-61d11ab43241)]
+    IsLeader AS bool
+    [@Guid(a67cfe89-3d02-4e9d-bb3b-409ddbe6a376)]
+    Number AS int
+    [@Guid(214abb9d-6787-41d2-9e75-4d9cdd0f6f21)]
+    IsActive AS bool
+
+[Securable]
+[@Guid(a4100acb-98ee-4a42-98cb-7bb1bb9953c4)]
+[@GuidId(3f6ec43f-1e00-4eb9-9689-aa4641043a08)]
+ENTITY Person
+WITH
+    [Length = 255]
+    [@Guid(91a6508b-e1fc-4b19-89a7-8fb5fa856bda)]
+    FirstName AS string
+    [Length = 255]
+    [@Guid(b49db8aa-a8f9-4f09-a2eb-bbc7f69bf7f9)]
+    LastName AS string
+    [@Guid(7530d6d2-9945-421b-8852-047aeb458fb9)]
+    Sex AS int
+    [@Guid(63936086-67c3-4bc2-8091-b8d38a1f75f0)]
+    Age AS int
+    [@Guid(0128a246-5c73-4ce1-b615-c29f2e4be61c)]
+    Birthday AS DateTime
+    [@Guid(f49d104c-69da-4b7a-b54d-cecbd92aeabc)]
+    IsActive AS bool
+    [OneToMany OnDeleteNoAction Simple]
+    [@Guid(ffbe0138-aaeb-4873-ae10-7e787671b1a0)]
+    [@GuidRef(51ca7574-1b4f-4b02-81cf-c40010726991, 5eb11671-25c8-42c7-8100-0ab148f45547)]
+    Teams AS Siemens.Mom.Presales.Training.MasterData.DemoLib.MSModel.DataModel.Team
+

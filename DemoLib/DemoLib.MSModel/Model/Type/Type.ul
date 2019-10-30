@@ -1,0 +1,14 @@
+VERSION '01.12'
+
+[@Guid(1c5c909f-8e5a-413b-b56c-8ea0a0f16440)]
+PARAMETERTYPE TeamType
+WITH
+    [Length = 255]
+    [@Guid(5fd7610e-f431-4b22-a328-f28599763539)]
+    Name AS string
+    [Length = 255]
+    [@Guid(64a6a766-e08b-433c-9c95-2097007ff499)]
+    Description AS string
+    [@Guid(3b3b511c-b1fb-4b64-863c-3fa750943387)]
+    Number AS int
+

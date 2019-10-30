@@ -1,0 +1,66 @@
+VERSION '01.12'
+
+[Protected]
+[@Guid(4fa9ac63-881f-4d6a-ab87-7a111fb2ed95)]
+COMMAND CreateTeam
+WITH
+    [@GuidRef(51ca7574-1b4f-4b02-81cf-c40010726991, 1c5c909f-8e5a-413b-b56c-8ea0a0f16440)]
+    Team AS Siemens.Mom.Presales.Training.MasterData.DemoLib.MSModel.Types.TeamType
+    IsLeader AS bool
+    IsActive AS bool
+RESPONSE
+    [Optional]
+    Id AS Guid
+
+[Protected]
+[@Guid(e30a4593-bcd9-41c8-a2ab-2db9f30abd65)]
+COMMAND DeleteTeam
+WITH
+    Id AS Guid
+
+[Protected]
+[@Guid(3427fa18-4f3f-465b-9fa3-33c76e60d3e9)]
+COMMAND CreatePerson
+WITH
+    [Length = 255]
+    FirstName AS string
+    [Length = 255]
+    LastName AS string
+    Sex AS int
+    Age AS int
+    Birthday AS DateTime
+    IsActive AS bool
+RESPONSE
+    [Optional]
+    Id AS Guid
+
+[Protected]
+[@Guid(8b323b14-3a22-46c6-a7f7-2765958f9afd)]
+COMMAND UpdatePerson
+WITH
+    [Length = 255]
+    FirstName AS string
+    [Length = 255]
+    LastName AS string
+    Sex AS int
+    Age AS int
+    Birthday AS DateTime
+    IsActive AS bool
+    Id AS Guid
+
+[Protected]
+[@Guid(354e695b-48fd-4f3d-9204-632321d5c421)]
+COMMAND DeletePerson
+WITH
+    Id AS Guid
+
+[Protected]
+[@Guid(6205b6d5-0b2d-4831-8f44-fc6b000cd861)]
+COMMAND UpdateTeam
+WITH
+    [@GuidRef(51ca7574-1b4f-4b02-81cf-c40010726991, 1c5c909f-8e5a-413b-b56c-8ea0a0f16440)]
+    Team AS Siemens.Mom.Presales.Training.MasterData.DemoLib.MSModel.Types.TeamType
+    IsLeader AS bool
+    IsActive AS bool
+    Id AS Guid
+
