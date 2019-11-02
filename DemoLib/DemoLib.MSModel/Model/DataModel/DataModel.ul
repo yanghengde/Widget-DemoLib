@@ -5,6 +5,8 @@ VERSION '01.12'
 [@GuidId(99aba0f9-b496-4f8b-b3de-0ddd1efb9e13)]
 ENTITY Team
 WITH
+    [LogicalKey]
+    [Mandatory]
     [Length = 255]
     [@Guid(cb7ba19a-913a-4214-b707-4d0baab6c269)]
     Name AS string

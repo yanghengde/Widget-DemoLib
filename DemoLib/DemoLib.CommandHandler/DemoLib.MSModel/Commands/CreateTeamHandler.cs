@@ -37,7 +37,10 @@ namespace Siemens.Mom.Presales.Training.MasterData.DemoLib.MSModel.Commands
                 entity.IsActive = command.IsActive;
                 entity.IsLeader = command.IsLeader;
 
-                var existentity = platform.Query<ITeam>().FirstOrDefault(x=>x.Name == command.Team.Name);
+                PropertyValuesSpecification<ITeam> pv = new PropertyValuesSpecification<ITeam>();
+                pv.Add("Name", command.Team.Name);
+
+                var existentity = platform.GetEntity(pv);
                 if (existentity == null)
                 {
                     platform.Submit(entity);

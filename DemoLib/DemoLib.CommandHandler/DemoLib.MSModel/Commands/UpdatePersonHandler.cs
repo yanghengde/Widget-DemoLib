@@ -33,10 +33,18 @@ namespace Siemens.Mom.Presales.Training.MasterData.DemoLib.MSModel.Commands
                 var entity = platform.GetEntity<IPerson>(command.Id);
                 if (entity == null)
                 {
-                    return new UpdatePerson.Response { Error = new ExecutionError(-1010, string.Format("[{0}]已经不存在，不允许更新", command.FirstName)) };
+                   return new UpdatePerson.Response { Error = new ExecutionError(-1010, string.Format("[{0}]已经不存在，不允许更新", command.FirstName)) };
                 }
                 else
                 {
+                    var existentity = platform.Query<IPerson>().FirstOrDefault(x => x.FirstName == command.FirstName && x.LastName == command.LastName);
+                    if(existentity != null)
+                    {
+                        if (!existentity.Id.Equals(command.Id))
+                        {
+                            return new UpdatePerson.Response { Error = new ExecutionError(-1010, string.Format("[{0}]+[{1}]已经存在，不允许更新", command.FirstName,command.LastName)) };
+                        }
+                    }
                     entity.FirstName = command.FirstName;
                     entity.LastName = command.LastName;
                     entity.IsActive = command.IsActive;
