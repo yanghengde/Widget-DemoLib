@@ -13,7 +13,7 @@
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <FunctionalBlockType>Library</FunctionalBlockType>
-    <FunctionalBlockVersion>02.00.01</FunctionalBlockVersion>
+    <FunctionalBlockVersion>03.00.01</FunctionalBlockVersion>
     <FunctionalBlockName>DemoLib</FunctionalBlockName>
     <FunctionalBlockPrefix>Siemens.Mom.Presales.Training</FunctionalBlockPrefix>
     <SitPlatformVersion>3.0</SitPlatformVersion>
@@ -36,6 +36,34 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Siemens.Mom.Presales.Training.MasterData.DemoLib.MSModel, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DemoLib.MSModel\bin\Siemens.Mom.Presales.Training.MasterData.DemoLib.MSModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Siemens.Mom.Presales.Training.MasterData.DemoLib.MSModel.Commands, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DemoLib.MSModel\bin\Siemens.Mom.Presales.Training.MasterData.DemoLib.MSModel.Commands.dll</HintPath>
+    </Reference>
+    <Reference Include="Siemens.Mom.Presales.Training.MasterData.DemoLib.MSModel.Events, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DemoLib.MSModel\bin\Siemens.Mom.Presales.Training.MasterData.DemoLib.MSModel.Events.dll</HintPath>
+    </Reference>
+    <Reference Include="Siemens.Mom.Presales.Training.MasterData.DemoLib.MSModel.ProjectionModel, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DemoLib.MSModel\bin\Siemens.Mom.Presales.Training.MasterData.DemoLib.MSModel.ProjectionModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Siemens.Mom.Presales.Training.MasterData.DemoLib.MSModel.Types, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DemoLib.MSModel\bin\Siemens.Mom.Presales.Training.MasterData.DemoLib.MSModel.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="Siemens.Mom.Presales.Training.MasterData.DemoLib.MSModel.Types.ProjectionModel, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DemoLib.MSModel\bin\Siemens.Mom.Presales.Training.MasterData.DemoLib.MSModel.Types.ProjectionModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Siemens.Mom.Presales.Training.MasterData.DemoLib.MSModel.Types.ReadingModel, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DemoLib.MSModel\bin\Siemens.Mom.Presales.Training.MasterData.DemoLib.MSModel.Types.ReadingModel.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -94,6 +122,10 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <Compile Include="DemoLib.MSModel\Events\TimerEvent\OnceTimerEventHandler.cs" />
+    <Compile Include="DemoLib.MSModel\Events\TimerEvent\OnceTimerEventHandlerExecution.cs" />
+    <Compile Include="DemoLib.MSModel\Events\TimerEvent\PeriodTimerEventHandler.cs" />
+    <Compile Include="DemoLib.MSModel\Events\TimerEvent\PeriodTimerEventHandlerExecution.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

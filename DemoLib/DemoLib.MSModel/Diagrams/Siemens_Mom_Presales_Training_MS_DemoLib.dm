@@ -6,7 +6,7 @@
     <Artifacts>
       <ArtifactSuo>
         <X>49</X>
-        <Y>86</Y>
+        <Y>85</Y>
         <FullName>Siemens.Mom.Presales.Training.MasterData.DemoLib.MSModel.DataModel.Team</FullName>
         <IsExpandedA>true</IsExpandedA>
         <IsExpandedB>true</IsExpandedB>
@@ -14,7 +14,7 @@
       </ArtifactSuo>
       <ArtifactSuo>
         <X>339</X>
-        <Y>89</Y>
+        <Y>88</Y>
         <FullName>Siemens.Mom.Presales.Training.MasterData.DemoLib.MSModel.DataModel.Person</FullName>
         <IsExpandedA>true</IsExpandedA>
         <IsExpandedB>true</IsExpandedB>
@@ -29,7 +29,7 @@
         <IsExpandedC>false</IsExpandedC>
       </ArtifactSuo>
       <ArtifactSuo>
-        <X>551</X>
+        <X>552</X>
         <Y>87</Y>
         <FullName>Siemens.Mom.Presales.Training.MasterData.DemoLib.MSModel.Commands.CreatePerson</FullName>
         <IsExpandedA>true</IsExpandedA>
@@ -50,6 +50,14 @@
         <FullName>Siemens.Mom.Presales.Training.MasterData.DemoLib.MSModel.Commands.DeletePerson</FullName>
         <IsExpandedA>true</IsExpandedA>
         <IsExpandedB>false</IsExpandedB>
+        <IsExpandedC>false</IsExpandedC>
+      </ArtifactSuo>
+      <ArtifactSuo>
+        <X>379</X>
+        <Y>331</Y>
+        <FullName>Siemens.SimaticIT.SystemData.Foundation.Events.TimerEvent</FullName>
+        <IsExpandedA>false</IsExpandedA>
+        <IsExpandedB>true</IsExpandedB>
         <IsExpandedC>false</IsExpandedC>
       </ArtifactSuo>
     </Artifacts>

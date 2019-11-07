@@ -1,1 +1,10 @@
 VERSION '01.12'
+
+[Reliable]
+[@Guid(8cadb209-eaf6-4ca4-89ed-f87386e3b1be)]
+EVENTHANDLER OnceTimerEventHandler LINKED TO Siemens.SimaticIT.SystemData.Foundation.Events.TimerEvent
+
+[Reliable]
+[@Guid(7d2bab28-f641-4a91-888f-2b0baa72f306)]
+EVENTHANDLER PeriodTimerEventHandler LINKED TO Siemens.SimaticIT.SystemData.Foundation.Events.TimerEvent
+
