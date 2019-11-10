@@ -56,7 +56,7 @@
         <X>379</X>
         <Y>331</Y>
         <FullName>Siemens.SimaticIT.SystemData.Foundation.Events.TimerEvent</FullName>
-        <IsExpandedA>false</IsExpandedA>
+        <IsExpandedA>true</IsExpandedA>
         <IsExpandedB>true</IsExpandedB>
         <IsExpandedC>false</IsExpandedC>
       </ArtifactSuo>

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<projects>
+  <project>
+    <type>CommandHandler</type>
+    <path>C:\Projects\DemoLib\DemoLib\DemoLib.CommandHandler\bin\Debug\</path>
+  </project>
+  <project>
+    <type>EventHandler</type>
+    <path>C:\Projects\DemoLib\DemoLib\DemoLib.EventHandler\bin\Debug\</path>
+  </project>
+  <project>
+    <type>Model</type>
+    <path>C:\Projects\DemoLib\DemoLib\DemoLib.MSModel\bin\</path>
+  </project>
+  <project>
+    <type>Installer</type>
+    <path>C:\Projects\DemoLib\DemoLib\DemoLib.Installer\bin\Debug\</path>
+  </project>
+</projects>
