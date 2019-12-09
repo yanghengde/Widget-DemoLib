@@ -13,7 +13,7 @@
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <FunctionalBlockType>Library</FunctionalBlockType>
-    <FunctionalBlockVersion>04.00.01</FunctionalBlockVersion>
+    <FunctionalBlockVersion>06.00.00</FunctionalBlockVersion>
     <FunctionalBlockName>DemoLib</FunctionalBlockName>
     <FunctionalBlockPrefix>Siemens.Mom.Presales.Training</FunctionalBlockPrefix>
     <SitPlatformVersion>3.0</SitPlatformVersion>
@@ -122,6 +122,8 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <Compile Include="DemoLib.MSModel\Events\CommittedEvent\CommittedEvent_Trans.cs" />
+    <Compile Include="DemoLib.MSModel\Events\CommittedEvent\CommittedEvent_TransExecution.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -9,7 +9,7 @@
     <AssemblyName>Siemens.Mom.Presales.Training.MasterData.DemoLib.MSModel</AssemblyName>
     <Name>DemoLib.MSModel</Name>
     <FunctionalBlockType>Library</FunctionalBlockType>
-    <FunctionalBlockVersion>04.00.01</FunctionalBlockVersion>
+    <FunctionalBlockVersion>06.00.00</FunctionalBlockVersion>
     <FunctionalBlockName>DemoLib</FunctionalBlockName>
     <FunctionalBlockDomain>MasterData</FunctionalBlockDomain>
     <FunctionalBlockPrefix>Siemens.Mom.Presales.Training</FunctionalBlockPrefix>

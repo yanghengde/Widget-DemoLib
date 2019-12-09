@@ -64,3 +64,13 @@ WITH
     IsActive AS bool
     Id AS Guid
 
+[Protected]
+[@AddedOnMinorVersion=04.01.00]
+[@Guid(1525c345-c1ae-4eeb-998c-2f3f792a8057)]
+COMMAND AssignPersonToTeam
+WITH
+    [@AddedOnMinorVersion=04.01.00]
+    TeamId AS Guid
+    [@AddedOnMinorVersion=04.01.00]
+    PersonIds AS list of Guid
+

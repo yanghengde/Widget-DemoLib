@@ -1,1 +1,6 @@
 VERSION '01.12'
+
+[Reliable]
+[@Guid(8a2f8015-c964-44fa-9425-f82cf3a9a3a5)]
+EVENTHANDLER CommittedEvent_Trans LINKED TO Siemens.SimaticIT.SystemData.Foundation.Events.CommittedEvent
+

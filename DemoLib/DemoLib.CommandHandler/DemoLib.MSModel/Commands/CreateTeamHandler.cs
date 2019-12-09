@@ -29,16 +29,23 @@ namespace Siemens.Mom.Presales.Training.MasterData.DemoLib.MSModel.Commands
             ITracer tracer = platform.Tracer;
             tracer.Write("Siemens-SimaticIT-Trace-Custom", Category.Informational, "Create Team Start...");
 
+            //platform.CallCommand()
+            //platform.SendCommand()
+
+            //platform.Principal.Identity.Name
+
+         
+
             Dictionary<string, object> dict = new Dictionary<string, object>()
             {
-                { "test", "log test" }
+                { "command", "log test" }
             };
             platform.ApplicationLog(12101, dict);
 
             try
             {
                 var entity = platform.Create<ITeam>();
-                entity.Name = command.Team.Name+"China";
+                entity.Name = command.Team.Name;
                 entity.Description = command.Team.Description;
                 entity.Number = command.Team.Number;
                 entity.IsActive = command.IsActive;

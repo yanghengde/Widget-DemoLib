@@ -29,7 +29,7 @@ namespace Siemens.Mom.Presales.Training.MasterData.DemoLib.MSModel.Commands
             ITracer tracer = platform.Tracer;
             tracer.Write("Siemens-SimaticIT-Trace-Custom", Category.Informational, "Create Person Start...");
             Dictionary<string, object> dict = new Dictionary<string, object>();
-            dict.Add("test", "have log value");
+            dict.Add("CreatePerson", "have log value");
             platform.ApplicationLog(12101, dict, "Siemens.Mom.Presales.Training.MasterData.DemoLib.MSModel.Commands.CreatePerson");
             try
             {

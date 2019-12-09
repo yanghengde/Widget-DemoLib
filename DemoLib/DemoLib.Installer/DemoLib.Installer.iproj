@@ -10,7 +10,7 @@
     <Name>DemoLib.Installer</Name>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FunctionalBlockType>Library</FunctionalBlockType>
-    <FunctionalBlockVersion>04.00.01</FunctionalBlockVersion>
+    <FunctionalBlockVersion>06.00.00</FunctionalBlockVersion>
     <FunctionalBlockName>DemoLib</FunctionalBlockName>
     <FunctionalBlockPrefix>Siemens.Mom.Presales.Training</FunctionalBlockPrefix>
     <FunctionalBlockModels>Siemens.Mom.Presales.Training.MasterData.DemoLib.MSModel</FunctionalBlockModels>
@@ -29,6 +29,10 @@
     <DebugSymbols>true</DebugSymbols>
     <OutputPath>bin\Release\</OutputPath>
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <CertificateName />
+    <AppName>DemoApp</AppName>
   </PropertyGroup>
   <ItemGroup>
     <Folder Include="Config" />

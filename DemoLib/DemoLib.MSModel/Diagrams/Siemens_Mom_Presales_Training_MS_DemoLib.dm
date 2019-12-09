@@ -9,55 +9,31 @@
         <Y>85</Y>
         <FullName>Siemens.Mom.Presales.Training.MasterData.DemoLib.MSModel.DataModel.Team</FullName>
         <IsExpandedA>true</IsExpandedA>
-        <IsExpandedB>true</IsExpandedB>
+        <IsExpandedB>false</IsExpandedB>
         <IsExpandedC>false</IsExpandedC>
       </ArtifactSuo>
       <ArtifactSuo>
-        <X>339</X>
-        <Y>88</Y>
+        <X>529</X>
+        <Y>69</Y>
         <FullName>Siemens.Mom.Presales.Training.MasterData.DemoLib.MSModel.DataModel.Person</FullName>
         <IsExpandedA>true</IsExpandedA>
         <IsExpandedB>true</IsExpandedB>
         <IsExpandedC>false</IsExpandedC>
       </ArtifactSuo>
       <ArtifactSuo>
-        <X>725</X>
-        <Y>104</Y>
+        <X>262</X>
+        <Y>360</Y>
         <FullName>Siemens.Mom.Presales.Training.MasterData.DemoLib.MSModel.Types.TeamType</FullName>
         <IsExpandedA>true</IsExpandedA>
         <IsExpandedB>false</IsExpandedB>
         <IsExpandedC>false</IsExpandedC>
       </ArtifactSuo>
       <ArtifactSuo>
-        <X>552</X>
-        <Y>87</Y>
-        <FullName>Siemens.Mom.Presales.Training.MasterData.DemoLib.MSModel.Commands.CreatePerson</FullName>
-        <IsExpandedA>true</IsExpandedA>
-        <IsExpandedB>true</IsExpandedB>
-        <IsExpandedC>false</IsExpandedC>
-      </ArtifactSuo>
-      <ArtifactSuo>
-        <X>701</X>
-        <Y>297</Y>
-        <FullName>Siemens.Mom.Presales.Training.MasterData.DemoLib.MSModel.Commands.UpdatePerson</FullName>
-        <IsExpandedA>true</IsExpandedA>
-        <IsExpandedB>true</IsExpandedB>
-        <IsExpandedC>false</IsExpandedC>
-      </ArtifactSuo>
-      <ArtifactSuo>
-        <X>190</X>
-        <Y>264</Y>
-        <FullName>Siemens.Mom.Presales.Training.MasterData.DemoLib.MSModel.Commands.DeletePerson</FullName>
+        <X>539</X>
+        <Y>359</Y>
+        <FullName>Siemens.Mom.Presales.Training.MasterData.DemoLib.MSModel.Commands.CreateTeam</FullName>
         <IsExpandedA>true</IsExpandedA>
         <IsExpandedB>false</IsExpandedB>
-        <IsExpandedC>false</IsExpandedC>
-      </ArtifactSuo>
-      <ArtifactSuo>
-        <X>379</X>
-        <Y>331</Y>
-        <FullName>Siemens.SimaticIT.SystemData.Foundation.Events.TimerEvent</FullName>
-        <IsExpandedA>true</IsExpandedA>
-        <IsExpandedB>true</IsExpandedB>
         <IsExpandedC>false</IsExpandedC>
       </ArtifactSuo>
     </Artifacts>
